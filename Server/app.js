@@ -1,7 +1,10 @@
 import express from "express";
 import { PORT, connectDB } from "./configs/config.js";
+import rateLimiter from "./middlewares/rateLimit.js";
 
 const app = express();
+
+app.use(rateLimiter);
 app.use(express.json());
 
 async function initDB() {
