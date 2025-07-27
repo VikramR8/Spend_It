@@ -1,8 +1,8 @@
 import express from "express";
-import { PORT } from "./configs/config.js";
-import rateLimiter from "./middlewares/rateLimit.js";
-import  transactionRoute  from "./routes/transactionsRoutes.js";
-import { initDB } from "./configs/config.js";
+import { PORT } from "./src/configs/config.js";
+import rateLimiter from "./src/middlewares/rateLimit.js";
+import  transactionRoute  from "./src/routes/transactionsRoutes.js";
+import { initDB } from "./src/configs/config.js";
 
 const app = express();
 
