@@ -1,1 +1,1 @@
-export const API_URL = "http://192.168.29.246:3000/api";
+export const API_URL = "https://spend-it-2.onrender.com/api";
